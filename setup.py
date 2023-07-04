@@ -8,6 +8,7 @@ setup(
     url='https://github.com/ZyMa-1/OsuFileParser',
     license='MIT',
     packages=find_packages(),
+    package_dir={'OsuFileParser': 'src'},
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
