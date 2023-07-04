@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name='OsuFileParser',
@@ -7,9 +7,9 @@ setup(
     author='ZyMa-1',
     url='https://github.com/ZyMa-1/OsuFileParser',
     license='MIT',
-    packages=find_packages(),
     python_requires=">=3.10",
     package_dir={'OsuFileParser': 'src'},
+    packages=['OsuFileParser'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
