@@ -8,8 +8,8 @@ setup(
     url='https://github.com/ZyMa-1/OsuFileParser',
     license='MIT',
     python_requires=">=3.10",
-    package_dir={'OsuFileParser': 'src', 'my_dataclasses': 'src/my_dataclasses'},
-    packages=['OsuFileParser', 'my_dataclasses'],
+    package_dir={'OsuFileParser': 'src'},
+    packages=['OsuFileParser', 'OsuFileParser.my_dataclasses'],
     classifiers=[
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
