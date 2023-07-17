@@ -6,7 +6,6 @@ setup(
     description='Package for wrapping ".osu" file data into a python class.',
     author='ZyMa-1',
     url='https://github.com/ZyMa-1/OsuFileParser',
-    include_package_data=True,
     license='MIT',
     python_requires=">=3.10",
     package_dir={'OsuFileParser': 'src'},
