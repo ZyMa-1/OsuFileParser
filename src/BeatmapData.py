@@ -78,7 +78,7 @@ class _Events:
 
         for event in data:
             if event.type:
-                setattr(self, "background_filename", event.params[0])
+                setattr(self, "background_filename", event.params[0][1:-1])  # "bg.png" -> bg.png
                 break
 
 

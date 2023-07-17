@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='OsuFileParser',
-    version='1.0.1',
+    version='1.0.2',
     description='Package for wrapping ".osu" file data into a python class.',
     author='ZyMa-1',
     url='https://github.com/ZyMa-1/OsuFileParser',
