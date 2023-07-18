@@ -1,4 +1,10 @@
 # OsuFileParser
+[![GitHub release](https://img.shields.io/github/release/ZyMa-1/OsuFileParser.svg?style=for-the-badge&logo=github)](https://github.com/ZyMa-1/OsuFileParser/releases/latest)
+<br>
+<br>
+[![Python Version](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/downloads/release/python-310/)
+[![Licence MIT](https://img.shields.io/badge/License-MIT-purple.svg)](/LICENCE)
+![Test Status](https://github.com/ZyMa-1/OsuFileParser/actions/workflows/tests.yml/badge.svg?branch=master)
 
 Package for wrapping ".osu" file data into a python class.
 
