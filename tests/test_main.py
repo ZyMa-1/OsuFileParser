@@ -4,6 +4,7 @@ from src.BeatmapData import _General, _Editor, _Metadata, _Difficulty, BeatmapDa
 from src.BeatmapFileParser import BeatmapFileParser
 from src.constants import general_expected_slots, editor_expected_slots, metadata_expected_slots, \
     difficulty_expected_slots
+from tests.PathManager import PathManager
 
 
 class TestSlots(unittest.TestCase):
@@ -43,12 +44,14 @@ class TestBeatmapFileParser(unittest.TestCase):
 
 class TestBeatmapData(unittest.TestCase):
     def test_parse_full(self):
-        input_file_path = "input_files/FELT - Day and Night (UndeadCapulet) [Terrace Ballad].osu"
+        input_file_path = PathManager.PROJECT_ROOT / "tests" / "input_files" / \
+                          "FELT - Day and Night (UndeadCapulet) [Terrace Ballad].osu"
         data = BeatmapData(BeatmapFileParser.parse_full_osu_file(input_file_path))
         self.assertIsNotNone(data)
 
     def test_parse_metadata(self):
-        input_file_path = "input_files/FELT - Day and Night (UndeadCapulet) [Terrace Ballad].osu"
+        input_file_path = PathManager.PROJECT_ROOT / "tests" / "input_files" / \
+                          "FELT - Day and Night (UndeadCapulet) [Terrace Ballad].osu"
         data = BeatmapData(BeatmapFileParser.parse_osu_file_metadata(input_file_path))
         self.assertIsNotNone(data)
 
