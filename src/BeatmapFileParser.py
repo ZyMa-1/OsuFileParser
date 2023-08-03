@@ -65,7 +65,7 @@ class _SectionParser:
         for point in data:
             new_data.append(TimingPoint(time=int(point[0]), beat_length=float(point[1]), meter=int(point[2]),
                                         sample_set=int(point[3]), sample_index=int(point[4]), volume=int(point[5]),
-                                        uninherited=bool(point[6]), effects=int(point[7])))
+                                        uninherited=bool(int(point[6])), effects=int(point[7])))
         return new_data
 
     @staticmethod
